@@ -1,7 +1,6 @@
 class Solution {
 public:
     string maximumOddBinaryNumber(string s) {
-    //   string ans = "";
     string ans(1, s[0]);
         for(int i=1; i <s.size();i++)
         {
@@ -16,7 +15,6 @@ public:
 
         }
         int pos = ans.find('1');
-
         ans.erase(pos, 1);
         ans += '1';
         return ans;
