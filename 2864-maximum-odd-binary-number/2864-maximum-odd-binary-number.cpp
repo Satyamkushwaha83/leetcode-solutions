@@ -1,3 +1,15 @@
+class Solution {
+public:
+    string maximumOddBinaryNumber(string s) {
+        sort(s.rbegin(),s.rend());
+        int pos = s.find('1');
+        s.erase(pos, 1);
+        s += '1';
+        return s;
+
+    }
+};
+
 // class Solution {
 // public:
 //     string maximumOddBinaryNumber(string s) {
@@ -22,15 +34,3 @@
 
 //     }
 // };
-
-class Solution {
-public:
-    string maximumOddBinaryNumber(string s) {
-        sort(s.rbegin(),s.rend());
-        int pos = s.find('1');
-        s.erase(pos, 1);
-        s += '1';
-        return s;
-
-    }
-};
